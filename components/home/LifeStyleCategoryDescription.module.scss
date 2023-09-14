@@ -1,0 +1,45 @@
+@import "../../styles/global.scss";
+
+.wrap{
+  padding: {
+    top: $padding-container-large;
+  }
+}
+
+.container{
+  width: 70%;
+  margin: 0 auto;
+}
+
+.titleBox{
+  margin: {
+    bottom: 1.5rem;
+  }
+}
+
+.title{
+  text-align: center;
+  font: {
+    size: $font-size-title;
+    weight: bold;  
+  }
+}
+
+.categoryCard{
+  margin: {
+    bottom: $padding-container-default;
+  }
+
+  & img{
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.categoryCardTitle{
+  text-align: center;
+  font-size: $font-size-subTitle;
+  margin: {
+    top: $padding-container-tiny;
+  }
+}

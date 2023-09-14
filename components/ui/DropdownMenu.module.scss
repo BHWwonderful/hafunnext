@@ -1,0 +1,23 @@
+@import "../../styles/global.scss";
+
+.dropdownMenu{
+  position:relative;
+  display: inline-block;
+}
+
+.dropdownBox{
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: $padding-container-tiny;
+  margin: {
+    top: .25rem;
+  }
+}
+
+.dropdownLink{
+  text-align: center;
+  display: block;
+  width:100%;
+  cursor: pointer;
+  padding: $padding-button-small;
+}

@@ -1,0 +1,10 @@
+# directory or files to ignore
+
+# Next.js build directory
+.next/
+
+# Node.js dependencies
+node_modules
+
+# Environment variables
+.env

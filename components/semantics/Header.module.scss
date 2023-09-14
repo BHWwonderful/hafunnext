@@ -1,0 +1,12 @@
+@import "../../styles/global.scss";
+
+.header{
+  align-items: center;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: {
+    left: $padding-container-default;
+    right: $padding-container-default
+  }
+}

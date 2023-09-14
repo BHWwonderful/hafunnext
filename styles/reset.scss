@@ -1,0 +1,51 @@
+@import "./global.scss";
+
+html, body, header, main, footer, div, h1, h2, h3, h4, button, strong, img, a, ul, li{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: {
+    size: 1rem;
+    family: $primary-font, $secondary-font;
+    weight: 400;
+  }
+}
+
+html, body{
+  min-height: 100%;
+}
+
+html{
+  @include mobile{
+    font-size: 16px;
+  }
+
+  @include tablet{
+    font-size: 20px;
+  }
+
+  @include desktop{
+    font-size: 24px;
+  }
+}
+
+ul, li{
+  list-style: none;
+}
+
+strong{
+  color: $primary-color;
+  font: {
+    size: inherit;
+    weight: inherit;
+  }
+}
+
+button{
+  background: inherit;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  overflow: visible;
+  cursor: pointer;
+}

@@ -1,0 +1,55 @@
+// 1. Variables
+// font
+$primary-font: "EuclidFlex";
+$secondary-font: "SansSerif";
+
+// color
+$primary-color: rgba(255, 92, 1, 1);
+$accent-color: rgba(154, 0, 0, 1);
+$positive-color: rgba(87, 212, 27, 1);
+$negative-color: rgba(212, 27, 27, 1);
+
+$content-background-color: rgba(236, 236, 236, 1);
+$content-accent-color: rgba(111, 111, 111, 1);
+
+// border-radius
+$border-radius-default: 1rem;
+$border-radius-small: 0.5rem;
+
+// padding
+$padding-button-tiny: 0.25rem 0.5rem;
+$padding-button-small: 0.5rem 1rem;
+$padding-button-large: 1rem 2rem;
+
+$padding-container-tiny : 0.5rem;
+$padding-container-small: 1rem;
+$padding-container-default: 1.5rem;
+$padding-container-large: 2rem;
+
+// size
+$font-size-title: 2rem;
+$font-size-subTitle: 1.5rem;
+
+// Responsive Breakpoints
+$mobile: 25rem;
+$tablet: 48rem;
+$desktop: 64rem;
+
+// 2. Responsive conditions
+@mixin mobile{
+  @media (max-width: $tablet){
+    @content;
+  }
+}
+
+@mixin tablet{
+  @media (min-width: $tablet) and (max-width: $desktop){
+    @content;
+  }
+}
+
+@mixin desktop{
+  @media (min-width: $desktop){
+    @content;
+  }
+}

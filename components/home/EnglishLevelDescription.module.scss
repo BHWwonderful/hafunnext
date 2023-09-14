@@ -1,0 +1,57 @@
+@import "../../styles/global.scss";
+
+.wrap{
+  padding: {
+    top: $padding-container-large;
+  }
+}
+
+.container{
+  width: 70%;
+  margin: 0 auto;
+}
+
+.titleBox{
+  margin: {
+    bottom: 1.5rem;
+  }
+}
+
+.title{
+  text-align: center;
+  white-space: nowrap;
+  font: {
+    size: $font-size-title;
+    weight: bold;
+  }
+}
+
+.categoryWrap{
+  position: relative;
+}
+
+.categoryContainer{
+  position:relative;
+}
+
+.levelCard{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.levelCardTitleBox{
+  width: 8.75rem;
+  padding: {
+    left: $padding-container-tiny;
+  }
+  & h3{
+    font: {
+      size: $font-size-subTitle;
+    }
+  }
+
+  & span{
+    color: $content-accent-color;
+  }
+}

@@ -1,0 +1,27 @@
+// CSS
+import styles from "./Header.module.scss"
+
+// Type
+import { ReactNode } from "react"
+
+interface HeaderProps{
+  leftChildren?: ReactNode,
+  centerChildren?: ReactNode,
+  rightChildren?: ReactNode,
+}
+
+export default function Header({leftChildren, centerChildren, rightChildren}: HeaderProps) {
+  return (
+    <header className={styles.header}>
+      <div>
+        {leftChildren}
+      </div>
+      <div>
+        {centerChildren}
+      </div>
+      <div>
+        {rightChildren}
+      </div>
+    </header>
+  )
+}

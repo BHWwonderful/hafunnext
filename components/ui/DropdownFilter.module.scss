@@ -1,0 +1,33 @@
+@import "../../styles/global.scss";
+
+.dropdownFilter{
+  position: relative;
+}
+
+.list{
+  width:100%;
+  position: absolute;
+  top:100%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: $padding-container-tiny;
+  z-index: 1;
+  margin-top: $padding-container-tiny;
+}
+
+.listItem{
+  padding: $padding-button-tiny;
+}
+
+.link{
+  text-align: center;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border-radius: $border-radius-small;
+  padding: $padding-button-tiny;
+
+  &:hover{
+    background-color: $content-background-color;
+  }
+}

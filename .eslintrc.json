@@ -1,0 +1,17 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["eslint:recommended", "next"],
+  "parserOptions": {
+    // 최신 버전의 자바스크립트 문법 사용
+    "ecmaVersion": "latest",
+    // 모듈 시스템 사용
+    "sourceType": "module",
+    // JSX 문법 활성화
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  }
+}

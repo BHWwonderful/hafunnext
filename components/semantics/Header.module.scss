@@ -10,3 +10,9 @@
     right: $padding-container-default
   }
 }
+
+.rightChild{
+  display: flex;
+  align-items: center;
+  gap: $padding-container-default;
+}

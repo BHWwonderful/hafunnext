@@ -7,7 +7,7 @@ import Image from "next/image";
 // hooks
 import { useRouter } from "next/router"
 
-const navData = [
+export const navData = [
   {
     id: "home",
     title: "Home",

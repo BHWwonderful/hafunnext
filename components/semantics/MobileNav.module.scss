@@ -43,3 +43,9 @@
     size: 0.875rem;
   }
 }
+
+@include desktop{
+  .wrap{
+    display: none;
+  }
+}

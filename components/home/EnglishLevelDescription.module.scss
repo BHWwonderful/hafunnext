@@ -55,3 +55,72 @@
     color: $content-accent-color;
   }
 }
+
+@include fromTablet{
+  .wrap{
+    padding: {
+      left: $padding-container-default;
+      right: $padding-container-default;
+      bottom: 80px;
+    }
+  }
+
+  .container{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .titleBox{
+    margin: {
+      bottom: 2.5rem;
+    }
+  }
+  
+  .categoryWrap{
+    display: flex;
+    justify-content: center;
+  }
+
+  .categoryContainer{
+    display: flex;
+  }
+
+  .levelCard{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+
+    & .levelCardTitleBox{
+      display: flex;
+      flex-direction: column;
+      position:absolute;
+      top:128px;
+    }
+
+    & h3{
+      width:100%;
+      text-align: center;
+    }
+
+    & span{
+      width:100%;
+      text-align: center;
+    }
+
+    &:nth-child(1) .levelCardTitleBox{
+      left:-12px;
+    }
+
+    &:nth-child(2) .levelCardTitleBox{
+      left:10px;
+    }
+
+    &:nth-child(3) .levelCardTitleBox{
+      left:26px;
+    }
+
+    &:nth-child(4) .levelCardTitleBox{
+      left:44px;
+    }
+  }
+}

@@ -1,6 +1,13 @@
 @import "../../styles/global.scss";
 
 .wrap{
+  display: flex;
+}
+
+.goToLevelTest{
+  display: flex;
+  align-items: center;
+  width:100%;
   padding: {
     top: $padding-container-large;
     bottom: $padding-container-large;
@@ -25,3 +32,34 @@
     weight: bold;
   }
 }
+
+.buttonBox{
+  display: flex;
+  justify-content: center;
+}
+
+@include desktop{
+  .goToLevelTest{
+    width:100%;
+    background-color: $tertiary-background-color;
+    padding: {
+      top: $padding-container-large;
+      bottom: $padding-container-large;
+    }
+  }
+
+  .buttonBox{
+    display: block;
+  }
+
+  .title{
+    text-align: left;
+  }
+
+  .desktopImg{
+    width: calc(100% - 454px);
+    max-width: 1320px;
+    height: auto;
+  }
+}
+

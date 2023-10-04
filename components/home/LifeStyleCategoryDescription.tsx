@@ -37,7 +37,7 @@ export default function LifeStyleCategoryDescription() {
             in Britain
           </h2>
         </div>
-        <div>
+        <div className={styles.categoryBox}>
           {lifeStyleCategoryData.map((categoryData) => {
             return(
               <div className={styles.categoryCard} key={categoryData.id}>

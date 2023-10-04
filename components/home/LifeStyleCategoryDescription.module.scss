@@ -3,6 +3,8 @@
 .wrap{
   padding: {
     top: $padding-container-large;
+    left: $padding-container-default;
+    right: $padding-container-default;
   }
 }
 
@@ -41,5 +43,39 @@
   font-size: $font-size-subTitle;
   margin: {
     top: $padding-container-tiny;
+  }
+}
+
+@include tablet{
+
+  .titleBox{
+    margin: {
+      bottom: 2.5rem;
+    }
+  }
+
+  .categoryBox{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@include desktop{
+
+  .container{
+    width: 70%;
+    margin: 0 auto;
+    max-width: 52.5rem;
+  }
+
+  .titleBox{
+    margin: {
+      bottom: 2.5rem;
+    }
+  }
+
+  .categoryBox{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }

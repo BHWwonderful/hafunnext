@@ -19,7 +19,7 @@ export default function Header({leftChildren, centerChildren, rightChildren}: He
       <div>
         {centerChildren}
       </div>
-      <div>
+      <div className={styles.rightChild}>
         {rightChildren}
       </div>
     </header>

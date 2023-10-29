@@ -1,28 +1,42 @@
 @import "../../styles/global.scss";
 
 .button{
+  position: relative;
   padding: $padding-button-small;
   background-color: white;
   border-radius: $border-radius-small;
-  border: 1px solid $primary-color;
-  color: $primary-color;
+  border: 1px solid $content-accent-color;
+  color: black;
+  box-shadow: 0 4px 0 rgba(235, 92, 0, 0.6);
+
+  &:active {
+    top: 5px;
+    box-shadow: none;
+  }
 }
 
 // type
 .positive{
   background-color: $positive-color;
   color: white;
+  border-color: $positive-color;
 }
 
 .negative{
   background-color: $negative-color;
   color: white;
+  border-color: $negative-color;
 }
 
 .primary{
   border:none;
   background-color: $primary-color;
   color: white;
+}
+
+.filter{
+  color: $primary-color;
+  border-color: $primary-color;
 }
 
 // size

@@ -2,6 +2,21 @@
 
 .dropdownFilter{
   position: relative;
+  display: flex;
+
+  &:active{
+    .dropdownImg{
+      position: absolute;
+      right: 1rem;
+      top: calc(1rem + 0.25rem);
+    }
+  }
+}
+
+.dropdownImg{
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
 }
 
 .list{

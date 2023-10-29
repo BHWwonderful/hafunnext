@@ -1,0 +1,16 @@
+@import "../../../styles/global.scss";
+
+.button{
+  cursor: pointer;
+  padding: 0.5rem;
+  border: 1px solid $content-accent-color;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & img {
+    width: 24px;
+    height: 24px;
+  }
+}

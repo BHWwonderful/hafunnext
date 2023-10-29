@@ -9,6 +9,13 @@
     left: $padding-container-default;
     right: $padding-container-default
   }
+  gap: $padding-container-default;
+}
+
+.centerChild{
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
 }
 
 .rightChild{

@@ -12,7 +12,7 @@ interface DropdownFilterProp{
   dropdownItems?: DropdownItemData[],
 }
 
-interface DropdownItemData {
+export interface DropdownItemData {
   id: string,
   text: string,
   onClick?: () => void
@@ -61,7 +61,7 @@ export default function DropdownFilter({text = "default", dropdownItems = defaul
 
   return (
     <div ref={detectRef} className={styles.dropdownFilter}>
-      <Button onClick={handleChangeIsClicked} type={isClicked ? "primary" : "default"}>{text}</Button>
+      <Button display={"block"} onClick={handleChangeIsClicked} type={isClicked ? "primary" : "filter"}>{text}</Button>
       {isClicked && 
         <ul className={styles.list}>
           {dropdownItems.map((item) => {

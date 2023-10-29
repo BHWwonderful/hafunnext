@@ -5,11 +5,13 @@ import { createWrapper } from 'next-redux-wrapper'
 
 // reducers
 import { langReducer } from './slices/langSlice'
+import { testReducer } from './slices/testSlice'
 
 // Root reducer를 사용하는 대신, 각 slice의 reducer를 할당한다.
 const makeStore = () => configureStore({
   reducer: {
-    lang: langReducer
+    lang: langReducer,
+    test: testReducer
   },
   devTools: true,
 })

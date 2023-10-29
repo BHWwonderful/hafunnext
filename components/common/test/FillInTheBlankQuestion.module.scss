@@ -1,0 +1,130 @@
+@import "../../../styles/global.scss";
+
+.wrap{
+  height: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: min-content min-content 1fr 1fr;
+  row-gap: 1rem;
+  padding: {
+    left: $padding-container-default;
+    right: $padding-container-default;
+  }
+}
+
+.titleBox{
+  grid-row: 1;
+
+  & h2 {
+    font: {
+      size: $font-size-title;
+      weight: bold;
+    }
+  }
+}
+
+.questionBox{
+  grid-row: 2;
+  margin: {
+    bottom: 1.5rem;
+  }
+
+  & p {
+    font: {
+      size: $font-size-subTitle;
+    }
+  }
+}
+
+.choiceBox{
+  grid-row: 3;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+
+  & span {
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    border : 1px solid $content-accent-color;
+    border-radius: $border-radius-default;
+    padding: {
+      top:$padding-container-small;
+      bottom: $padding-container-small;
+    }
+    margin-bottom: 20px;
+  }
+}
+
+.submitBox{
+  position: relative;
+  grid-row: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: {
+    bottom: $padding-container-default;
+  }
+
+  & .submitButtonBox{
+    z-index: 11;
+  }
+
+  & .correct{
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    left: -24px;
+    top:0;
+    background-color: $positive-background-color;
+    padding: $padding-container-default;
+    z-index: 10;
+
+    & h2{
+      color: $positive-color;
+      font: {
+        size: $font-size-title;
+        weight: bold;
+      }
+    }
+  }
+
+  & .correct:after{
+    content: "";
+    position: fixed;
+    top: 5rem;
+    left:0;
+    width: 100%;
+    height: calc(100vh - 5rem);
+  }
+
+  & .wrong{
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    left: -24px;
+    top:0;
+    background-color: $negative-background-color;
+    padding: $padding-container-default;
+    z-index: 10;
+
+    & h2{
+      color: $negative-color;
+      font: {
+        size: $font-size-title;
+        weight: bold;
+      }
+    }
+  }
+
+  & .wrong:after{
+    content: "";
+    position: fixed;
+    top: 5rem;
+    left:0;
+    width: 100%;
+    height: calc(100vh - 5rem);
+  }
+
+
+}

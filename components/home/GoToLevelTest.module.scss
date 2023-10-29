@@ -17,6 +17,7 @@
 .container{
   max-width: 70%;
   margin: 0 auto;
+
 }
 
 .titleBox{
@@ -59,6 +60,7 @@
   .desktopImg{
     width: calc(100% - 454px);
     max-width: 1320px;
+    max-height: 600px;
     height: auto;
   }
 }

@@ -1,6 +1,5 @@
 // Components
 import Header from "../components/semantics/Header"
-import Main from "../components/semantics/Main"
 import Image from "next/image"
 import GoToLevelTest from "../components/home/GoToLevelTest"
 import EnglishLevelDescription from "../components/home/EnglishLevelDescription"
@@ -30,14 +29,13 @@ export default function HomePage() {
             <DesktopNav />
             <LanguageSelector />
           </>
-
         }
       />
-      <Main>
+      <main>
         <GoToLevelTest />
         <EnglishLevelDescription />
         <LifeStyleCategoryDescription />
-      </Main>
+      </main>
       <MobileNav />
     </div>
   )

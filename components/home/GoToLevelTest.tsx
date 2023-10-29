@@ -7,12 +7,21 @@ import Button from "../ui/Button"
 // hooks
 import { useState, useEffect } from "react"
 import { useMediaQuery } from "react-responsive"
+import { useRouter } from "next/router"
 
 // assets
 const desktopImg = process.env.NEXT_PUBLIC_IMAGE_LEVELTEST_FUN_PATH
 const mobileImg = process.env.NEXT_PUBLIC_IMAGE_LEVELTEST_BANNER_PATH
 
 export default function GoToLevelTest() {
+
+  const router = useRouter();
+
+  const handleGoToLevelTestPage = () => {
+    router.push("/leveltest")
+  }
+
+  const [desktop, setDesktop] = useState(false);
 
   const backgroundImg = {
     backgroundImage : `url(${mobileImg})`,
@@ -23,8 +32,6 @@ export default function GoToLevelTest() {
   const isDesktop = useMediaQuery({
     query: "(min-width: 1024px)"
   })
-
-  const [desktop, setDesktop] = useState(false);
 
   useEffect(() => {
     setDesktop(isDesktop)
@@ -42,7 +49,13 @@ export default function GoToLevelTest() {
             </h2>
           </div>
           <div className={styles.buttonBox}>
-            <Button type="primary" size="large">Level Test</Button>
+            <Button
+              type="primary"
+              size="large"
+              onClick={handleGoToLevelTestPage}
+            >
+              Level Test
+            </Button>
           </div>
         </div>
       </div>
